@@ -87,7 +87,7 @@ function toRenderUl(renderElement, renderParam) {
 	}	
 }
 
-function toRender(renderParams=undefined) {
+function toRender(renderParams) {
 	var element;
 
 	for (var i = 0; i < renderParams.length; i++) {
