@@ -16,3 +16,10 @@
 #app > *:last-child {
   border-bottom: none;
 }
+li{
+  cursor:pointer;
+}
+.done{
+  text-decoration: line-through;
+
+}
