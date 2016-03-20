@@ -1,3 +1,4 @@
+var calculator = require("./calculator.js");
 
 console.log(calculator('40 + 2')); // 42
 
