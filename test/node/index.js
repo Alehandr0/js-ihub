@@ -1,6 +1,17 @@
+var calculation = require('./calculator.js');
 
-console.log(calculator('40 + 2')); // 42
+function calculator(inValue) {
+    if (typeof inValue === 'string' || inValue instanceof String) {
+        try {
+            return calculation(inValue);
+        } catch (e) {
+          return 'Error: "' + inValue + '" is not valid expression.';
+        } 
+    } else {
+      return 'TypeError: Expression should be a string.';
+    }
+}
 
-console.log(calculator(123)); // TypeError: Expression should be a string.
-
-console.log(calculator('40 + hello')); // Error: "40 + hello" is not valid expression.
+console.log(calculator('40+2'));
+console.log(calculator(123));
+console.log(calculator('40 + hello'));
