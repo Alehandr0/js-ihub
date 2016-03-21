@@ -16,3 +16,7 @@
 #app > *:last-child {
   border-bottom: none;
 }
+
+#app > .clicked {
+  text-decoration: line-through;
+}
