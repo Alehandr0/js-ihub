@@ -11,22 +11,13 @@ var todos = [
 var appMap = new Map();
 appMap.set('app', todos); 
 
-// Начальное заполнение массива объектами, которые нужно отобразить в браузере.
-var objectsToRender = [{'id':'app', 'inner':todos}];
-
 
 // Описание события нажатия кнопки на элементе списка.
 function liListener(event) {
-	target = event.target;
+	var target = event.target;
 	var parrent = target.parentNode;
-	var children = parrent.childNodes;
-	var indChild = 0;
-
-	for (var i = 0; i < children.length; i++) {
-		if (target == children[i]) {indChild = i; break;}
-	}
 	
-	params = {'id':parrent.getAttribute('id'), 'nodeName':parrent.nodeName, 'childNom':indChild};
+	params = {'id':parrent.getAttribute('id'), 'nodeName':parrent.nodeName, 'childNom':target.ind};
 	requestChangeData(params);
 }
 
@@ -56,7 +47,6 @@ function requestChangeData(requestParams) {
 	}
 }
 
-
 // Функции выполняющие рендеринг элементов в браузере.
 function toRenderUl(renderElement, renderParam) {
 	
@@ -72,6 +62,7 @@ function toRenderUl(renderElement, renderParam) {
 		renderParam.inner[j];
 
 		newLi = document.createElement('li');
+		newLi.ind = j;
 		newLi.addEventListener("click", liListener);
 
 		newLi.innerHTML = renderParam.inner[j].name;
@@ -98,7 +89,8 @@ function toRender(renderParams) {
 	}
 }
 
-// Начальное отображение элементов на экране.
+// Начальное заполнение массива объектами, которые нужно отобразить в браузере.
+var objectsToRender = [{'id':'app', 'inner':todos}];
 toRender(objectsToRender);
 objectsToRender = [];
 
