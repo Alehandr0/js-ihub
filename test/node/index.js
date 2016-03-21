@@ -1,3 +1,18 @@
+var calc = require('./calculator');
+
+var calculator = function(expr) {
+    if (typeof expr !== 'string') {
+        return 'TypeError: Expression should be a string.';
+    }
+    else {
+        try {
+            return calc(expr);
+        }
+        catch (err) {
+            return 'Error: "' + expr + '" is not valid expression.';
+        }
+    }
+};
 
 console.log(calculator('40 + 2')); // 42
 
