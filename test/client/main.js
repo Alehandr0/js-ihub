@@ -94,3 +94,4 @@ var objectsToRender = [{'id':'app', 'inner':todos}];
 toRender(objectsToRender);
 objectsToRender = [];
 
+// На моём localhost Ваш код не запустился
