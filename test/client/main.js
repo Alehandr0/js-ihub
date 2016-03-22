@@ -18,3 +18,5 @@ list.addEventListener("click" , function(event) {
   else
     el.style.textDecoration = 'line-through';
 });
+
+// На моём localhost Ваш код не запустился
