@@ -58,3 +58,5 @@ function text_deco2(){
 
 
 fillpage();
+
+// На моём localhost Ваш код не запустился
