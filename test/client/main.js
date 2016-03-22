@@ -24,3 +24,4 @@ function putLiInUl(ul,arrayText){
     ul.appendChild(createLi(itemText));
   })
 }
+// На моём localhost Ваш код не сработал
