@@ -16,3 +16,5 @@ app.onclick = function(e) {
   var target = e.target;
   target.classList.toggle('clicked');
 };
+
+// На моём localhost Ваш код не запустился
