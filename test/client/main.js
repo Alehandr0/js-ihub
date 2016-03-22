@@ -14,20 +14,10 @@ function start()
 }
 function per(n)
   {
-    var p = document.getElementById(n).innerHTML,
-        f1 = "document.getElementById(n).style.textDecoration=",
-        f2 = "document.getElementById(n).innerHTML=todos[n]";
-    if(p==todos[n])
-      {
-        f1 += "'line-through'";
-        eval(f1);
-        f2 += "+' '";
-        eval(f2);
-      }
-      else
-      {
-        f1 += "'none'";
-        eval(f1);
-        eval(f2);
-    }
+    var	p = document.getElementById(n).innerHTML,
+       f1 = "document.getElementById(n).style.textDecoration=",
+       f2 = "document.getElementById(n).innerHTML=todos[n]";
+
+    p==todos[n]?p=f1+"'line-through';"+f2+"+' '":p=f1+"'none';"+f2;
+    eval(p);
 }
