@@ -26,3 +26,5 @@ var todoApp = {
 }
 
 todoApp.showList();
+
+// На моём localhost Ваш код не запустился
