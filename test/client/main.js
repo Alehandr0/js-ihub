@@ -3,7 +3,8 @@ document.addEventListener("DOMContentLoaded", start);
 var todos = [
   'Get test exercise',
   'Write code',
-  'Pass test'
+  'Pass test',
+  'Any text'
 ];
 function start()
   {
