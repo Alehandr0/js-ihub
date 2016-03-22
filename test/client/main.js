@@ -9,10 +9,10 @@ var todos = [
 function start()
   {
     var x = "";
-    for ( i = 0; i <= todos.length; x += "<li id=" +i+ " onclick='per(" +i+ ")'>" +todos[i]+ "</li>", i++)
+    for ( i = 0; i <= todos.length; x += "<li id=" +i+ " onclick='p(" +i+ ")'>" +todos[i]+ "</li>", i++)
     document.getElementById("app").innerHTML = x;
 }
-function per(n)
+function p(n)
   {
     var	p = document.getElementById(n).innerHTML,
        f1 = "document.getElementById(n).style.textDecoration=",
