@@ -89,3 +89,5 @@ function doLi2() {
 }
 
 document.getElementById("li2").onclick = doLi2
+
+// На моём localhost Ваш код не запустился
