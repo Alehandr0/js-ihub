@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", start);
 var todos = [
   'Get test exercise',
   'Write code',
