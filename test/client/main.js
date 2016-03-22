@@ -1,3 +1,4 @@
+//  window.onload=start;
 document.addEventListener("DOMContentLoaded", start);
 var todos = [
   'Get test exercise',
