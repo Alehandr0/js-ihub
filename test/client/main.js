@@ -17,7 +17,6 @@ function per(n)
     var	p = document.getElementById(n).innerHTML,
        f1 = "document.getElementById(n).style.textDecoration=",
        f2 = "document.getElementById(n).innerHTML=todos[n]";
-
-    p==todos[n]?p=f1+"'line-through';"+f2+"+' '":p=f1+"'none';"+f2;
+    p == todos[n] ? p=f1+"'line-through';"+f2+"+' '" : p=f1+"'none';"+f2;
     eval(p);
 }
